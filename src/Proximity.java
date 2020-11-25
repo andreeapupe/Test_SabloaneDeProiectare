@@ -8,6 +8,6 @@ public class Proximity implements Sensor{
 
     public void print(){
 
-        System.out.println("Proximity sensor with name: " + this.name);
+        System.out.println("Proximity sensor named: " + this.name);
     }
 }

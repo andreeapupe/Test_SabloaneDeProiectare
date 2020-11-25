@@ -22,6 +22,6 @@ public class Panel implements  Sensor{
         for(Sensor i : content){
             i.print();
         }
-        System.out.println("---------------End of "+sectionTitle);
+        System.out.println("-------------End of "+sectionTitle);
     }
 }

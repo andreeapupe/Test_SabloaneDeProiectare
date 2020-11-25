@@ -1,14 +1,23 @@
 public class Camera implements Sensor {
     private String name;
-    private String detect;
+    private SensorStrategy detect;
 
-    public Camera(String name,String detect) {
+    public Camera(String name) {
         this.name = name;
-        this.detect = detect;
     }
 
     public void print(){
 
-        System.out.println("Proximity sensor with name: " + this.name+" can detect: "+this.detect);
+        if(detect==null) {
+            System.out.println(this.name);
+        }else{
+            detect.render(this.name);
+        }
+    }
+
+
+    public void setSensorStrategy(SensorStrategy sensor) {
+        this.detect = sensor;
+
     }
 }

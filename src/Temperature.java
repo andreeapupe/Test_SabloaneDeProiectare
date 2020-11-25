@@ -7,6 +7,6 @@ public class Temperature implements Sensor{
 
     public void print(){
 
-        System.out.println("Proximity sensor with name: " + this.name);
+        System.out.println("Temperature sensor named: " + this.name);
     }
 }

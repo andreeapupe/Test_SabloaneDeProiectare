@@ -7,6 +7,6 @@ public class Lidar implements Sensor{
 
     public void print(){
 
-        System.out.println("Proximity sensor with name: " + this.name);
+        System.out.println("Lidar: " + this.name);
     }
 }
